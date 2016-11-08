@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.3.1'
 
+#pretty printing in console
+gem 'awesome_print'
+
 ### RAILS ####
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7'
@@ -27,6 +30,11 @@ gem 'sqlite3', group: [:development, :test]
 
 ### OAUTH ###
 gem 'omniauth-github'
+
+# For API testing
+gem 'minitest-vcr'
+gem 'webmock'
+gem 'minitest-reporters'
 
 
 group :development, :test do
